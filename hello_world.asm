@@ -17,9 +17,12 @@ _start:
 
     mov eax, 0x1 
     mov ebx, 0
-     ret 16   
+    ret 16   
 
 ; la siguiente sección define los datos y las variables que se manejan
 section.data: 
     message: db "!Hello World", 0xA 
-    message_length equ $-message ñ
+    message_length equ $-message 
+
+; Compilado y funcionando correctamente en 
+; https://www.tutorialspoint.com/compile_asm_online.php 
